@@ -40,8 +40,8 @@ class SqualoRemoraService
     /**
      * Prepare message
      *
-     * @param string  $method
-     * @param message $message
+     * @param string $method
+     * @param string $message
      */
     private function prepareAndSendRemoraMessage($method, $message)
     {
