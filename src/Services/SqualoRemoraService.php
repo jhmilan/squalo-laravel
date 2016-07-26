@@ -34,15 +34,16 @@ class SqualoRemoraService
      */
     public function __call($method, $parameters)
     {
-        return call_user_func_array(array($this, 'prepareAndSendRemoraMessage'), $parameters);
+        return call_user_func_array(array($this, 'prepareAndSendRemoraMessage'), $method, $parameters);
     }
 
     /**
      * Prepare message
      *
-     * @param array $parameters
+     * @param string $method
+     * @param array  $parameters
      */
-    private function prepareAndSendRemoraMessage($parameters)
+    private function prepareAndSendRemoraMessage($method, $parameters)
     {
         return call_user_func_array(array($this->log, $method), $parameters);
     }
