@@ -1,0 +1,51 @@
+{
+    "name": "jhmilan/squalo-laravel",
+    "type": "library",
+    "description": "Send messages to Squalo with Laravel easily",
+    "keywords": [
+        "jhmilan",
+        "SqualoLaravel",
+        "Squalo",
+        "Logging",
+        "Laravel"
+    ],
+    "homepage": "https://github.com/jhmilan/SqualoLaravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jose H. Milán",
+            "email": "jhmilan@gmail.com",
+            "homepage": "http://www.jmilan.net",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "5.*",
+        "domnikl/statsd": "~2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit" : "4.*",
+        "scrutinizer/ocular": "~1.1",
+        "squizlabs/php_codesniffer": "~2.3",
+        "monolog/monolog": "~1.11"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jhmilan\\SqualoLaravel\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jhmilan\\SqualoLaravel\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
