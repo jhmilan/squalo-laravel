@@ -44,7 +44,7 @@ class SqualoRemoraService
      */
     private function prepareAndSendRemoraMessage($parameters)
     {
-        dd($paramaters);
+        dd($parameters);
         return call_user_func_array(array($this->log, $method), $parameters);
     }
 }
