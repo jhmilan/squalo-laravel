@@ -41,11 +41,11 @@ class SqualoRemoraService
      * Prepare message
      *
      * @param string $method
-     * @param string $message
+     * @param array  $parameters
      */
-    private function prepareAndSendRemoraMessage($method, $message)
+    private function prepareAndSendRemoraMessage($method, $parameters)
     {
-        $message = $message.'-checksum-'.md5($message.config('squalo.key.private')); 
-        return call_user_func_array(array($this->log, $method), $message);
+        $parameters[0] = $parameters[0].'-checksum-'.md5($parameters[0].config('squalo.key.private')); 
+        return call_user_func_array(array($this->log, $method), $parameters);
     }
 }
