@@ -3,6 +3,7 @@
 namespace Jhmilan\SqualoLaravel;
 
 use Services\SqualoRemoraService;
+use Illuminate\Support\ServiceProvider;
 
 class SqualoLaravelServiceProvider extends ServiceProvider
 {
