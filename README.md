@@ -14,7 +14,7 @@ Just a small Laravel5 to send data to Squalo (squalo.jmilan.net).
 Via Composer
 
 ``` bash
-$ composer require jhmilan/SqualoLaravel
+$ composer require jhmilan/squalo-laravel
 ```
 
 ## Setup
@@ -26,7 +26,7 @@ Jhmilan\SqualoLaravel\SqualoLaravelServiceProvider::class,
 
 Add the facade to your config.app.php
 ``` bash
-'SqualoLaravel' => Jhmilan\SqualoLaravel\Facades\SqualoLaravel::class,
+'Squalo' => Jhmilan\SqualoLaravel\Facades\SqualoLaravel::class,
 ```
 
 Publish the config file (a new config/SqualoLaravel.php file will be created, populate your .env as per the variables in the file)
